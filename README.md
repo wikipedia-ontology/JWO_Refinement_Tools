@@ -220,3 +220,8 @@ You can download Refined JWO as follows.
  * [inputs_and_outputs/class_instance_list_from_role.db](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/inputs_and_outputs/class_instance_list_from_role.db)
 * Output
  * [inputs_and_outputs/tests/added_class-instance_from_role.txt](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/inputs_and_outputs/tests/added_class-instance_from_role.txt)
+
+## Contact
+* Author: Takeshi Morita
+* E-mail: t_morita at si.aoyama.ac.jp
+
