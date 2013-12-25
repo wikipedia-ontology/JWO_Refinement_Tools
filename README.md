@@ -5,7 +5,8 @@ Japanese Wikipedia Ontology (JWO) Refinement Tools
 
 ## Requirements
 * [Eclipse 4.2](http://www.eclipse.org/juno/)
-* [Scala IDE for Eclipse For Scala 2.9.x](http://scala-ide.org/download/current.html)
+* [Scala IDE for Eclipse](http://scala-ide.org/download/current.html)
+ * [For Scala 2.9.x](http://download.scala-ide.org/sdk/e38/scala29/stable/site)
 
 ## Download Refined JWO
 You can download Refined JWO as follows. 
@@ -15,7 +16,9 @@ You can download Refined JWO as follows.
 
 ## Procedures used to refine JWO
 
-### 1. Extracting class-instance relationships
+[1. Extracting class-instance relationships](#p1)
+
+### <a name="p1"> 1. Extracting class-instance relationships
 
 #### 1-1. class_instance_extractor.ClassInstanceExtractor.scala
 * Input  
@@ -183,14 +186,14 @@ You can download Refined JWO as follows.
  * ontologies/refined_jwo_20131225.owl
 
 ## Test Programs
-1. class_instance_extractor.RoleStatementsExtractor.scala
+### class_instance_extractor.RoleStatementsExtractor.scala
 * Inputs
  * ontologies/wikipediaontology_instance_20101114ja.rdf
  * ontologies/wikipediaontology_class_20101114ja.rdf
 * Ouput
  * inputs_and_outputs/tests/role_statements.txt
 
-2. class_instance_extractor.ClassInstanceExtractorFromRoleStatements.scala
+### class_instance_extractor.ClassInstanceExtractorFromRoleStatements.scala
 * Input
  * inputs_and_outputs/tests/role_statements.txt
 * Outputs
@@ -198,7 +201,7 @@ You can download Refined JWO as follows.
  * input_and_outputs/tests/role-property-class-cnt.csv
  * input_and_outputs/tests/class-instance_from_role_statements.txt
 
-3. class_instance_extractor.AnalyzeRoleStatements.scala
+### class_instance_extractor.AnalyzeRoleStatements.scala
 * Inputs
  * inputs_and_outputs/duplicated_class-instance_from_role.txt
  * inputs_and_outputs/class_instance_list_from_role.db
