@@ -16,7 +16,7 @@ import class_instance_extractor.ClassInstanceList
 
 /**
  * 2. Refining class-instance relationships and identifying alignment target classes
- * 2-5. class_instance_extractor.DBDuplicationCheck.scala
+ * 2-5. class_instance_refinement_tool.DBDuplicationCheck.scala
  * - Input
  * -- inputs_and_outputs/refined_class_instance_list.db
  * - Output
