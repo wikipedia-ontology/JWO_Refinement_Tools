@@ -1,4 +1,4 @@
-JWO_Refinement_Tools
+JWO Refinement Tools
 ====================
 
 Japanese Wikipedia Ontology (JWO) Refinement Tools
@@ -12,20 +12,21 @@ Japanese Wikipedia Ontology (JWO) Refinement Tools
 ## Procedures used to refine JWO
 
 ### 1. Extracting class-instance relationships
-1. class_instance_extractor.ClassInstanceExtractor.scala
+
+1-1. class_instance_extractor.ClassInstanceExtractor.scala
 * Input  
  * ontologies/wikipediaontology_instance_20101114ja.rdf
 * Outputs
 * inputs_and_outputs/class-instance.txt
  * inputs_and_outputs/class-instance-cnt.csv
 
-2. class_instance_extractor.ClassInstanceExtractorFromRole.scala
+1-2. class_instance_extractor.ClassInstanceExtractorFromRole.scala
 * Input
  * ontologies/wikipediaontology_instance_20101114ja.rdf
 * Oputput
  * inputs_and_outputs/class-instance_from_role.txt
 
-3. class_instance_extractor.ConvertClassInstanceListToSQLiteDB.scala
+1-3. class_instance_extractor.ConvertClassInstanceListToSQLiteDB.scala
 * Inputs
  * inputs_and_outputs/class-instance.txt
  * inputs_and_outputs/class-instance_from_role.txt
@@ -33,7 +34,7 @@ Japanese Wikipedia Ontology (JWO) Refinement Tools
  * inputs_and_outputs/class_instance_list_from_type.db
  * inputs_and_outputs/class_instance_list_from_role.db
 
-4. class_instance_extractor.ClassInstanceExtractorFromDB.scala
+1-4. class_instance_extractor.ClassInstanceExtractorFromDB.scala
 * Inputs
  * inputs_and_outputs/class_instance_list_from_role.db
  * inputs_and_outputs/class_instance_list_from_type.db
