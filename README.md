@@ -17,6 +17,12 @@ You can download Refined JWO as follows.
 ## Procedures used to refine JWO
 
 [1. Extracting class-instance relationships](#p1)
+[2. Refining class-instance relationships and identifying alignment target classes](#p2)
+[3. Aligning JWO classes and JWN synsets](#p3)
+[4. Integrating JWO and JWN using DODDLE-OWL](#p4)
+[5. Removing redundant class-instance relationships](#p5)
+[6. Defining the domains of properties based on a consideration of property inheritance](#p6)
+[7. Buiding Refined JWO](#p7)
 
 ### <a name="p1"> 1. Extracting class-instance relationships
 
@@ -49,7 +55,7 @@ You can download Refined JWO as follows.
  * inputs_and_outputs/merged_class_instance_list.db
  * inputs_and_outputs/duplicated_class-instance_from_role.txt
 
-### 2. Refining class-instance relationships and identifying alignment target classes
+### <a name="p2"> 2. Refining class-instance relationships and identifying alignment target classes
 #### 2-1. class_extractor.ClassExtractorFromSqliteDB.scala
 * Inputs
  * inputs_and_outputs/merged_class_instance_list.db
@@ -100,7 +106,7 @@ You can download Refined JWO as follows.
 * Output
  * inputs_and_outputs/alignment-target-class-list.txt
 
-### 3. Aligning JWO classes and JWN synsets
+### <a name="p3"> 3. Aligning JWO classes and JWN synsets
 #### 3-1. jwo_jwn_alignment_tool.SynonymExtractorFromJpWn.scala
 * Inputs
  * ontologies/JPNWN1.1.owl
@@ -134,7 +140,7 @@ You can download Refined JWO as follows.
  * inputs_for_DODDLE/inputWordConceptList.txt
  * inputs_and_outputs/jwo_jwn_alignment_results_20120306.txt
 
-### 4. Integrating JWO and JWN using DODDLE-OWL
+### <a name="p4">4. Integrating JWO and JWN using DODDLE-OWL
 #### 4-1. DODDLE-OWL
 * Inputs
  * inputs_for_DODDLE/inputWordList.txt
@@ -150,7 +156,7 @@ You can download Refined JWO as follows.
 * Output
  * ontologies/merged_ontology_20120316.owl
 
-### 5. Removing redundant class-instance relationships
+### <a name="p5">5. Removing redundant class-instance relationships
 #### 5-1. class_instance_refinement_tool.RemoveRedundantClassInstance.scala
 * Inputs
  * ontologies/merged_ontology_revised_by_hand_20130912.owl
@@ -159,7 +165,7 @@ You can download Refined JWO as follows.
  * inputs_and_outputs/refined_class_instance_list_removing_redundant_type.db
  * inputs_and_outputs/redundant_type_set.txt
 
-### 6. Defining the domains of properties based on a consideration of property inheritance
+### <a name="p6">6. Defining the domains of properties based on a consideration of property inheritance
 #### 6-1. class_property_extractor.ClassPropertyExtractor.scala
 * Inputs
  * inputs_and_outputs/refined_class_instance_list_removing_redundant_type.db
@@ -175,7 +181,7 @@ You can download Refined JWO as follows.
  * inputs_and_outputs/class_elevated_property_list_with_label_and_depth.db
  * inputs_and_outputs/class_elevated_property_list_with_label_and_depth_removing_inherited_properties.db
 
-### 7. Buiding Refined JWO
+### <a name="p7">7. Buiding Refined JWO
 #### 7-1. ontology_builder.RefinedJWOBuilder.scala
 * Inputs
  * inputs_and_outputs/refined_class_instance_list_removing_redundant_type.db
@@ -186,14 +192,14 @@ You can download Refined JWO as follows.
  * ontologies/refined_jwo_20131225.owl
 
 ## Test Programs
-### class_instance_extractor.RoleStatementsExtractor.scala
+#### class_instance_extractor.RoleStatementsExtractor.scala
 * Inputs
  * ontologies/wikipediaontology_instance_20101114ja.rdf
  * ontologies/wikipediaontology_class_20101114ja.rdf
 * Ouput
  * inputs_and_outputs/tests/role_statements.txt
 
-### class_instance_extractor.ClassInstanceExtractorFromRoleStatements.scala
+#### class_instance_extractor.ClassInstanceExtractorFromRoleStatements.scala
 * Input
  * inputs_and_outputs/tests/role_statements.txt
 * Outputs
@@ -201,7 +207,7 @@ You can download Refined JWO as follows.
  * input_and_outputs/tests/role-property-class-cnt.csv
  * input_and_outputs/tests/class-instance_from_role_statements.txt
 
-### class_instance_extractor.AnalyzeRoleStatements.scala
+#### class_instance_extractor.AnalyzeRoleStatements.scala
 * Inputs
  * inputs_and_outputs/duplicated_class-instance_from_role.txt
  * inputs_and_outputs/class_instance_list_from_role.db
