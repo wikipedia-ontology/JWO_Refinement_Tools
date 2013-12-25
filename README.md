@@ -16,13 +16,13 @@ You can download Refined JWO as follows.
 
 ## Procedures used to refine JWO
 
-[1. Extracting class-instance relationships](#p1)
-[2. Refining class-instance relationships and identifying alignment target classes](#p2)
-[3. Aligning JWO classes and JWN synsets](#p3)
-[4. Integrating JWO and JWN using DODDLE-OWL](#p4)
-[5. Removing redundant class-instance relationships](#p5)
-[6. Defining the domains of properties based on a consideration of property inheritance](#p6)
-[7. Buiding Refined JWO](#p7)
+1. [Extracting class-instance relationships](#p1)
+2. [Refining class-instance relationships and identifying alignment target classes](#p2)
+3. [Aligning JWO classes and JWN synsets](#p3)
+4. [Integrating JWO and JWN using DODDLE-OWL](#p4)
+5. [Removing redundant class-instance relationships](#p5)
+6. [Defining the domains of properties based on a consideration of property inheritance](#p6)
+7. [Buiding Refined JWO](#p7)
 
 ### <a name="p1"> 1. Extracting class-instance relationships
 
