@@ -15,11 +15,11 @@ Japanese Wikipedia Ontology (JWO) Refinement Tools
 * [Apache Jena](http://jena.apache.org)
 * [sqlite-jdbc] (https://bitbucket.org/xerial/sqlite-jdbc)
 
-## Download Refined JWO
-You can download Refined JWO as follows. 
+## Download refined JWO
+You can download refined JWO as follows. 
 
-* [refined_jwo_20131225.owl](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/refined_jwo_20131225.owl)
-* [refined_jwo_class_instance_20131225.owl](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/refined_jwo_class_instance_20131225.zip)
+* [refined_jwo_20131225.owl](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/refined_jwo_20131225.owl) (Classes and the properties)
+* [refined_jwo_class_instance_20131225.owl](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/refined_jwo_class_instance_20131225.zip) (Classes and the instances)
 
 ## Procedures used to refine JWO
 
@@ -35,14 +35,14 @@ You can download Refined JWO as follows.
 
 #### 1-1. [class_instance_extractor.ClassInstanceExtractor.scala](https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/class_instance_extractor/ClassInstanceExtractor.scala)
 * Input  
- * [ontologies/wikipediaontology_instance_20101114ja.rdf](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/ontologies/wikipediaontology_instance_20101114ja.rdf)
+ * [ontologies/wikipediaontology_instance_20101114ja.rdf](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/ontologies/wikipediaontology_instance_20101114ja.7z)
 * Outputs
  * [inputs_and_outputs/class-instance.txt](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/inputs_and_outputs/class-instance.txt)
  * [inputs_and_outputs/class-instance-cnt.csv](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/inputs_and_outputs/class-instance-cnt.csv)
 
 #### 1-2. [class_instance_extractor.ClassInstanceExtractorFromRole.scala](https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/class_instance_extractor/ClassInstanceExtractorFromRole.scala)
 * Input
- * [ontologies/wikipediaontology_instance_20101114ja.rdf](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/wikipediaontology_instance_20101114ja.rdf)
+ * [ontologies/wikipediaontology_instance_20101114ja.rdf](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/wikipediaontology_instance_20101114ja.7z)
 * Oputput
  * [inputs_and_outputs/class-instance_from_role.txt](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/inputs_and_outputs/class-instance_from_role.txt)
 
@@ -176,7 +176,7 @@ You can download Refined JWO as follows.
 #### 6-1. [class_property_extractor.ClassPropertyExtractor.scala](https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/class_property_extractor/ClassPropertyExtractor.scala)
 * Inputs
  * [inputs_and_outputs/refined_class_instance_list_removing_redundant_type.db](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/inputs_and_outputs/refined_class_instance_list_removing_redundant_type.db)
- * [ontologies/wikipediaontology_instance_20101114ja.rdf](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/wikipediaontology_instance_20101114ja.rdf)
+ * [ontologies/wikipediaontology_instance_20101114ja.rdf](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/wikipediaontology_instance_20101114ja.7z)
 * Output
  * [inputs_and_outputs/class_property_list_with_count.db](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/inputs_and_outputs/class_property_list_with_count.db)
 
@@ -201,7 +201,7 @@ You can download Refined JWO as follows.
 ## Test Programs
 #### [class_instance_extractor.RoleStatementsExtractor.scala](https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/class_instance_extractor/RoleStatementsExtractor.scala)
 * Inputs
- * [ontologies/wikipediaontology_instance_20101114ja.rdf](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/wikipediaontology_instance_20101114ja.rdf)
+ * [ontologies/wikipediaontology_instance_20101114ja.rdf](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/wikipediaontology_instance_20101114ja.7z)
  * [ontologies/wikipediaontology_class_20101114ja.rdf](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/wikipediaontology_class_20101114ja.rdf)
 * Ouput
  * [inputs_and_outputs/tests/role_statements.txt](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/inputs_and_outputs/tests/role_statements.txt)
