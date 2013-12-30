@@ -21,6 +21,11 @@ You can download refined JWO as follows.
 * [refined_jwo_20131225.owl](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/refined_jwo_20131225.owl) (Classes and the properties)
 * [refined_jwo_class_instance_20131225.owl](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/refined_jwo_class_instance_20131225.zip) (Classes and the instances)
 
+## Publications
+* Takeshi Morita, Yuka Sekimoto, Susumu Tamagawa, Takahira Yamaguchi, "Building up a Class Hierarchy with Properties from Japanese Wikipedia", 2012 IEEE/WIC/ACM International Conference on Web Intelligence, pp. 514-521 (2012) ([PDF](http://dl.acm.org/citation.cfm?id=2457639))
+* 森田 武史, 玉川 奨, 山口 高平, "オントロジーアライメントを用いた日本語Wikipediaオントロジーと日本語WordNetの統合", 第28回 セマンティックウェブとオントロジー研究会 SIG-SWO-A1202-07, (2012) ([PDF](http://sigswo.org/papers/SIG-SWO-A1202/SIG-SWO-A1202-07.pdf))
+* 森田 武史, 関本 有佳, 玉川 奨, 山口 高平, "日本語Wikipediaからのプロパティ付きクラス階層の構築と評価", 人工知能学会 セマンティックWebとオントロジー研究会 第26回 SIG-SWO-A1103-06, (2011) ([PDF](http://sigswo.org/papers/SIG-SWO-A1103/SIG-SWO-A1103-06.pdf))
+
 ## Procedures used to refine JWO
 
 1. [Extracting class-instance relationships](#p1)
