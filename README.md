@@ -19,7 +19,7 @@ Japanese Wikipedia Ontology (JWO) Refinement Tools
 You can download Refined JWO as follows. 
 
 * [refined_jwo_20131225.owl](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/refined_jwo_20131225.owl)
-* [refined_jwo_class_instance_20131225.owl](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/refined_jwo_class_instance_20131225.owl)
+* [refined_jwo_class_instance_20131225.owl](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/refined_jwo_class_instance_20131225.zip)
 
 ## Procedures used to refine JWO
 
@@ -116,7 +116,7 @@ You can download Refined JWO as follows.
 ### <a name="p3"> 3. Aligning JWO classes and JWN synsets
 #### 3-1. [jwo_jwn_alignment_tool.SynonymExtractorFromJpWn.scala](https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/jwo_jwn_alignment_tool/SynonymExtractorFromJpWn.scala)
 * Inputs
- * [ontologies/JPNWN1.1.owl](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/JPNWN1.1.owl)
+ * [ontologies/JPNWN1.1.owl](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/JPNWN1.1.zip)
  * [inputs_and_outputs/extract_synonyms_from_jpwn.sparql](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/inputs_and_outputs/extract_synonyms_from_jpwn.sparql)
 * Outputs
  * [inputs_and_outputs/jpwn1.1_synonyms_ja.txt](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/inputs_and_outputs/jpwn1.1_synonyms_ja.txt)
@@ -130,17 +130,17 @@ You can download Refined JWO as follows.
 
 #### 3-3. [ontology_builder.ConvertJWNOWLToTDB.scala](https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/ontology_builder/ConvertJWNOWLToTDB.scala)
 * Inputs
- * [ontologies/JPNWN1.1.owl](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/JPNWN1.1.owl)
+ * [ontologies/JPNWN1.1.owl](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/JPNWN1.1.zip)
  * [ontologies/JPNWN1.1_tree.owl](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/JPNWN1.1_tree.owl)
 * Output
- * [ontologies/jwn1.1_tdb](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/jwn1.1_tdb)
+ * [ontologies/jwn1.1_tdb](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/jwn1.1_tdb.zip)
 
 #### 3-4. [jwo_jwn_alignment_tool.JWOandJWNAlignmentTool.scala](https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/jwo_jwn_alignment_tool/JWOandJWNAlignmentTool.scala)
 * Inputs
  * [inputs_and_outputs/alignment-target-class-list.txt](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/inputs_and_outputs/alignment-target-class-list.txt)
  * [inputs_and_outputs/jpwn1.1_synonyms_ja.txt](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/inputs_and_outputs/jpwn1.1_synonyms_ja.txt)
  * [inputs_and_outputs/merged_class_instance_list.db](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/inputs_and_outputs/merged_class_instance_list.db)
- * [ontologies/jwn1.1_tdb](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/jwn1.1_tdb)
+ * [ontologies/jwn1.1_tdb](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/jwn1.1_tdb.zip)
 * Outputs
  * [inputs_and_outputs/alignment_results.db](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/inputs_and_outputs/alignment_results.db)
  * [inputs_for_DODDLE/inputWordList.txt](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/inputs_for_DODDLE/inputWordList.txt)
@@ -195,7 +195,7 @@ You can download Refined JWO as follows.
  * [inputs_and_outputs/class_elevated_property_list_with_label_and_depth_removing_inherited_properties.db](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/inputs_and_outputs/class_elevated_property_list_with_label_and_depth_removing_inherited_properties.db)
  * [ontologies/merged_ontology_revised_by_hand_20130912.owl](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/merged_ontology_revised_by_hand_20130912.owl)
 * Outputs
- * [ontologies/refined_jwo_class_instance_20131225.owl](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/refined_jwo_class_instance_20131225.owl)
+ * [ontologies/refined_jwo_class_instance_20131225.owl](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/refined_jwo_class_instance_20131225.zip)
  * [ontologies/refined_jwo_20131225.owl](https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/refined_jwo_20131225.owl)
 
 ## Test Programs
