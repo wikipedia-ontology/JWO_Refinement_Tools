@@ -41,6 +41,7 @@
 
 <ul>
 <li><a href="http://www.eclipse.org/juno/">Eclipse 4.2</a></li>
+<li><a href="http://www.scala-sbt.org">sbt 0.13.1</a></li>
 <li>
 <a href="http://scala-ide.org/download/current.html">Scala IDE for Eclipse</a>
 
@@ -56,24 +57,17 @@
 <li><a href="http://nlpwww.nict.go.jp/wn-ja/index.en.html">Japanese WordNet</a></li>
 <li><a href="http://www.wikipediaontology.org/">Japanese Wikipedia Ontology</a></li>
 <li><a href="http://jena.apache.org">Apache Jena</a></li>
+<li><a href="http://scalaquery.org">ScalaQuery</a></li>
 <li><a href="https://bitbucket.org/xerial/sqlite-jdbc">sqlite-jdbc</a></li>
+<li><a href="http://mvnrepository.com/artifact/org.scala-lang/scala-swing/2.9.3">Swing for Scala</a></li>
 </ul><h2>
-<a name="download-refined-jwo" class="anchor" href="#download-refined-jwo"><span class="octicon octicon-link"></span></a>Download refined JWO</h2>
+<a name="download-refined-jwo" class="anchor" href="#download-refined-jwo"><span class="octicon octicon-link"></span></a>Download Refined JWO</h2>
 
-<p>You can download refined JWO as follows. </p>
+<p>You can download Refined JWO as follows. </p>
 
 <ul>
-<li>
-<a href="https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/refined_jwo_20131225.owl">refined_jwo_20131225.owl</a> (Classes and the properties)</li>
-<li>
-<a href="https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/refined_jwo_class_instance_20131225.zip">refined_jwo_class_instance_20131225.owl</a> (Classes and the instances)</li>
-</ul><h2>
-<a name="publications" class="anchor" href="#publications"><span class="octicon octicon-link"></span></a>Publications</h2>
-
-<ul>
-<li>Takeshi Morita, Yuka Sekimoto, Susumu Tamagawa, Takahira Yamaguchi, "Building up a Class Hierarchy with Properties from Japanese Wikipedia", 2012 IEEE/WIC/ACM International Conference on Web Intelligence, pp. 514-521 (2012) (<a href="http://dl.acm.org/citation.cfm?id=2457639">PDF</a>)</li>
-<li>森田 武史, 玉川 奨, 山口 高平, "オントロジーアライメントを用いた日本語Wikipediaオントロジーと日本語WordNetの統合", 第28回 セマンティックウェブとオントロジー研究会 SIG-SWO-A1202-07, (2012) (<a href="http://sigswo.org/papers/SIG-SWO-A1202/SIG-SWO-A1202-07.pdf">PDF</a>)</li>
-<li>森田 武史, 関本 有佳, 玉川 奨, 山口 高平, "日本語Wikipediaからのプロパティ付きクラス階層の構築と評価", 人工知能学会 セマンティックWebとオントロジー研究会 第26回 SIG-SWO-A1103-06, (2011) (<a href="http://sigswo.org/papers/SIG-SWO-A1103/SIG-SWO-A1103-06.pdf">PDF</a>)</li>
+<li><a href="https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/refined_jwo_20131225.owl">refined_jwo_20131225.owl</a></li>
+<li><a href="https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/refined_jwo_class_instance_20131225.owl">refined_jwo_class_instance_20131225.owl</a></li>
 </ul><h2>
 <a name="procedures-used-to-refine-jwo" class="anchor" href="#procedures-used-to-refine-jwo"><span class="octicon octicon-link"></span></a>Procedures used to refine JWO</h2>
 
@@ -90,12 +84,12 @@
 </h3>
 
 <h4>
-<a name="1-1-class_instance_extractorclassinstanceextractorscala" class="anchor" href="#1-1-class_instance_extractorclassinstanceextractorscala"><span class="octicon octicon-link"></span></a>1-1. <a href="https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/class_instance_extractor/ClassInstanceExtractor.scala">class_instance_extractor.ClassInstanceExtractor.scala</a>
+<a name="1-1-class_instance_extractorclassinstanceextractorscala" class="anchor" href="#1-1-class_instance_extractorclassinstanceextractorscala"><span class="octicon octicon-link"></span></a>1-1. <a href="https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/main/scala/class_instance_extractor/ClassInstanceExtractor.scala">class_instance_extractor.ClassInstanceExtractor.scala</a>
 </h4>
 
 <ul>
 <li>Input<br><ul>
-<li><a href="https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/ontologies/wikipediaontology_instance_20101114ja.7z">ontologies/wikipediaontology_instance_20101114ja.rdf</a></li>
+<li><a href="https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/ontologies/wikipediaontology_instance_20101114ja.rdf">ontologies/wikipediaontology_instance_20101114ja.rdf</a></li>
 </ul>
 </li>
 <li>Outputs
@@ -106,14 +100,14 @@
 </ul>
 </li>
 </ul><h4>
-<a name="1-2-class_instance_extractorclassinstanceextractorfromrolescala" class="anchor" href="#1-2-class_instance_extractorclassinstanceextractorfromrolescala"><span class="octicon octicon-link"></span></a>1-2. <a href="https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/class_instance_extractor/ClassInstanceExtractorFromRole.scala">class_instance_extractor.ClassInstanceExtractorFromRole.scala</a>
+<a name="1-2-class_instance_extractorclassinstanceextractorfromrolescala" class="anchor" href="#1-2-class_instance_extractorclassinstanceextractorfromrolescala"><span class="octicon octicon-link"></span></a>1-2. <a href="https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/main/scala/class_instance_extractor/ClassInstanceExtractorFromRole.scala">class_instance_extractor.ClassInstanceExtractorFromRole.scala</a>
 </h4>
 
 <ul>
 <li>Input
 
 <ul>
-<li><a href="https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/wikipediaontology_instance_20101114ja.7z">ontologies/wikipediaontology_instance_20101114ja.rdf</a></li>
+<li><a href="https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/wikipediaontology_instance_20101114ja.rdf">ontologies/wikipediaontology_instance_20101114ja.rdf</a></li>
 </ul>
 </li>
 <li>Oputput
@@ -123,7 +117,7 @@
 </ul>
 </li>
 </ul><h4>
-<a name="1-3-class_instance_extractorconvertclassinstancelisttosqlitedbscala" class="anchor" href="#1-3-class_instance_extractorconvertclassinstancelisttosqlitedbscala"><span class="octicon octicon-link"></span></a>1-3. <a href="https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/class_instance_extractor/ConvertClassInstanceListToSQLiteDB.scala">class_instance_extractor.ConvertClassInstanceListToSQLiteDB.scala</a>
+<a name="1-3-class_instance_extractorconvertclassinstancelisttosqlitedbscala" class="anchor" href="#1-3-class_instance_extractorconvertclassinstancelisttosqlitedbscala"><span class="octicon octicon-link"></span></a>1-3. <a href="https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/main/scala/class_instance_extractor/ConvertClassInstanceListToSQLiteDB.scala">class_instance_extractor.ConvertClassInstanceListToSQLiteDB.scala</a>
 </h4>
 
 <ul>
@@ -142,7 +136,7 @@
 </ul>
 </li>
 </ul><h4>
-<a name="1-4-class_instance_extractorclassinstanceextractorfromdbscala" class="anchor" href="#1-4-class_instance_extractorclassinstanceextractorfromdbscala"><span class="octicon octicon-link"></span></a>1-4. <a href="https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/class_instance_extractor/ClassInstanceExtractorFromDB.scala">class_instance_extractor.ClassInstanceExtractorFromDB.scala</a>
+<a name="1-4-class_instance_extractorclassinstanceextractorfromdbscala" class="anchor" href="#1-4-class_instance_extractorclassinstanceextractorfromdbscala"><span class="octicon octicon-link"></span></a>1-4. <a href="https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/main/scala/class_instance_extractor/ClassInstanceExtractorFromDB.scala">class_instance_extractor.ClassInstanceExtractorFromDB.scala</a>
 </h4>
 
 <ul>
@@ -165,7 +159,7 @@
 </h3>
 
 <h4>
-<a name="2-1-class_extractorclassextractorfromsqlitedbscala" class="anchor" href="#2-1-class_extractorclassextractorfromsqlitedbscala"><span class="octicon octicon-link"></span></a>2-1. <a href="https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/class_extractor/ClassExtractorFromSqliteDB.scala">class_extractor.ClassExtractorFromSqliteDB.scala</a>
+<a name="2-1-class_extractorclassextractorfromsqlitedbscala" class="anchor" href="#2-1-class_extractorclassextractorfromsqlitedbscala"><span class="octicon octicon-link"></span></a>2-1. <a href="https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/main/scala/class_extractor/ClassExtractorFromSqliteDB.scala">class_extractor.ClassExtractorFromSqliteDB.scala</a>
 </h4>
 
 <ul>
@@ -186,7 +180,7 @@
 </ul>
 </li>
 </ul><h4>
-<a name="2-2-class_instance_refinement_toolclassinstancerefinementtoolscala" class="anchor" href="#2-2-class_instance_refinement_toolclassinstancerefinementtoolscala"><span class="octicon octicon-link"></span></a>2-2. <a href="https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/class_instance_refinement_tool/ClassInstanceRefinementTool.scala">class_instance_refinement_tool.ClassInstanceRefinementTool.scala</a>
+<a name="2-2-class_instance_refinement_toolclassinstancerefinementtoolscala" class="anchor" href="#2-2-class_instance_refinement_toolclassinstancerefinementtoolscala"><span class="octicon octicon-link"></span></a>2-2. <a href="https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/main/scala/class_instance_refinement_tool/ClassInstanceRefinementTool.scala">class_instance_refinement_tool.ClassInstanceRefinementTool.scala</a>
 </h4>
 
 <ul>
@@ -204,7 +198,7 @@
 </ul>
 </li>
 </ul><h4>
-<a name="2-3-class_extractorrefinedclassextractorscala" class="anchor" href="#2-3-class_extractorrefinedclassextractorscala"><span class="octicon octicon-link"></span></a>2-3. <a href="https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/class_extractor/RefinedClassExtractor.scala">class_extractor.RefinedClassExtractor.scala</a>
+<a name="2-3-class_extractorrefinedclassextractorscala" class="anchor" href="#2-3-class_extractorrefinedclassextractorscala"><span class="octicon octicon-link"></span></a>2-3. <a href="https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/main/scala/class_extractor/RefinedClassExtractor.scala">class_extractor.RefinedClassExtractor.scala</a>
 </h4>
 
 <ul>
@@ -225,7 +219,7 @@
 </ul>
 </li>
 </ul><h4>
-<a name="2-4-class_instance_extractorrefinedclassinstanceextractorscala" class="anchor" href="#2-4-class_instance_extractorrefinedclassinstanceextractorscala"><span class="octicon octicon-link"></span></a>2-4. <a href="https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/class_instance_extractor/RefinedClassInstanceExtractor.scala">class_instance_extractor.RefinedClassInstanceExtractor.scala</a>
+<a name="2-4-class_instance_extractorrefinedclassinstanceextractorscala" class="anchor" href="#2-4-class_instance_extractorrefinedclassinstanceextractorscala"><span class="octicon octicon-link"></span></a>2-4. <a href="https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/main/scala/class_instance_extractor/RefinedClassInstanceExtractor.scala">class_instance_extractor.RefinedClassInstanceExtractor.scala</a>
 </h4>
 
 <ul>
@@ -245,7 +239,7 @@
 </ul>
 </li>
 </ul><h4>
-<a name="2-5-class_instance_refinement_tooldbduplicationcheckscala" class="anchor" href="#2-5-class_instance_refinement_tooldbduplicationcheckscala"><span class="octicon octicon-link"></span></a>2-5. <a href="https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/class_instance_refinement_tool/DBDuplicationCheck.scala">class_instance_refinement_tool.DBDuplicationCheck.scala</a>
+<a name="2-5-class_instance_refinement_tooldbduplicationcheckscala" class="anchor" href="#2-5-class_instance_refinement_tooldbduplicationcheckscala"><span class="octicon octicon-link"></span></a>2-5. <a href="https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/main/scala/class_instance_refinement_tool/DBDuplicationCheck.scala">class_instance_refinement_tool.DBDuplicationCheck.scala</a>
 </h4>
 
 <ul>
@@ -262,7 +256,7 @@
 </ul>
 </li>
 </ul><h4>
-<a name="2-6-class_instance_refinement_toolanalyzeclassinstanceexperimentsscala" class="anchor" href="#2-6-class_instance_refinement_toolanalyzeclassinstanceexperimentsscala"><span class="octicon octicon-link"></span></a>2-6. <a href="https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/class_instance_refinement_tool/AnalyzeClassInstanceExperiments.scala">class_instance_refinement_tool.AnalyzeClassInstanceExperiments.scala</a>
+<a name="2-6-class_instance_refinement_toolanalyzeclassinstanceexperimentsscala" class="anchor" href="#2-6-class_instance_refinement_toolanalyzeclassinstanceexperimentsscala"><span class="octicon octicon-link"></span></a>2-6. <a href="https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/main/scala/class_instance_refinement_tool/AnalyzeClassInstanceExperiments.scala">class_instance_refinement_tool.AnalyzeClassInstanceExperiments.scala</a>
 </h4>
 
 <ul>
@@ -285,14 +279,14 @@
 </h3>
 
 <h4>
-<a name="3-1-jwo_jwn_alignment_toolsynonymextractorfromjpwnscala" class="anchor" href="#3-1-jwo_jwn_alignment_toolsynonymextractorfromjpwnscala"><span class="octicon octicon-link"></span></a>3-1. <a href="https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/jwo_jwn_alignment_tool/SynonymExtractorFromJpWn.scala">jwo_jwn_alignment_tool.SynonymExtractorFromJpWn.scala</a>
+<a name="3-1-jwo_jwn_alignment_toolsynonymextractorfromjpwnscala" class="anchor" href="#3-1-jwo_jwn_alignment_toolsynonymextractorfromjpwnscala"><span class="octicon octicon-link"></span></a>3-1. <a href="https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/main/scala/jwo_jwn_alignment_tool/SynonymExtractorFromJpWn.scala">jwo_jwn_alignment_tool.SynonymExtractorFromJpWn.scala</a>
 </h4>
 
 <ul>
 <li>Inputs
 
 <ul>
-<li><a href="https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/JPNWN1.1.zip">ontologies/JPNWN1.1.owl</a></li>
+<li><a href="https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/JPNWN1.1.owl">ontologies/JPNWN1.1.owl</a></li>
 <li><a href="https://github.com/t-morita/JWO_Refinement_Tools/tree/master/inputs_and_outputs/extract_synonyms_from_jpwn.sparql">inputs_and_outputs/extract_synonyms_from_jpwn.sparql</a></li>
 </ul>
 </li>
@@ -303,7 +297,7 @@
 </ul>
 </li>
 </ul><h4>
-<a name="3-2-jwo_jwn_alignment_tooljwoandjwnalignmentscala" class="anchor" href="#3-2-jwo_jwn_alignment_tooljwoandjwnalignmentscala"><span class="octicon octicon-link"></span></a>3-2. <a href="https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/jwo_jwn_alignment_tool/JWOandJWNAlignment.scala">jwo_jwn_alignment_tool.JWOandJWNAlignment.scala</a>
+<a name="3-2-jwo_jwn_alignment_tooljwoandjwnalignmentscala" class="anchor" href="#3-2-jwo_jwn_alignment_tooljwoandjwnalignmentscala"><span class="octicon octicon-link"></span></a>3-2. <a href="https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/main/scala/jwo_jwn_alignment_tool/JWOandJWNAlignment.scala">jwo_jwn_alignment_tool.JWOandJWNAlignment.scala</a>
 </h4>
 
 <ul>
@@ -321,25 +315,25 @@
 </ul>
 </li>
 </ul><h4>
-<a name="3-3-ontology_builderconvertjwnowltotdbscala" class="anchor" href="#3-3-ontology_builderconvertjwnowltotdbscala"><span class="octicon octicon-link"></span></a>3-3. <a href="https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/ontology_builder/ConvertJWNOWLToTDB.scala">ontology_builder.ConvertJWNOWLToTDB.scala</a>
+<a name="3-3-ontology_builderconvertjwnowltotdbscala" class="anchor" href="#3-3-ontology_builderconvertjwnowltotdbscala"><span class="octicon octicon-link"></span></a>3-3. <a href="https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/main/scala/ontology_builder/ConvertJWNOWLToTDB.scala">ontology_builder.ConvertJWNOWLToTDB.scala</a>
 </h4>
 
 <ul>
 <li>Inputs
 
 <ul>
-<li><a href="https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/JPNWN1.1.zip">ontologies/JPNWN1.1.owl</a></li>
+<li><a href="https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/JPNWN1.1.owl">ontologies/JPNWN1.1.owl</a></li>
 <li><a href="https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/JPNWN1.1_tree.owl">ontologies/JPNWN1.1_tree.owl</a></li>
 </ul>
 </li>
 <li>Output
 
 <ul>
-<li><a href="https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/jwn1.1_tdb.zip">ontologies/jwn1.1_tdb</a></li>
+<li><a href="https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/jwn1.1_tdb">ontologies/jwn1.1_tdb</a></li>
 </ul>
 </li>
 </ul><h4>
-<a name="3-4-jwo_jwn_alignment_tooljwoandjwnalignmenttoolscala" class="anchor" href="#3-4-jwo_jwn_alignment_tooljwoandjwnalignmenttoolscala"><span class="octicon octicon-link"></span></a>3-4. <a href="https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/jwo_jwn_alignment_tool/JWOandJWNAlignmentTool.scala">jwo_jwn_alignment_tool.JWOandJWNAlignmentTool.scala</a>
+<a name="3-4-jwo_jwn_alignment_tooljwoandjwnalignmenttoolscala" class="anchor" href="#3-4-jwo_jwn_alignment_tooljwoandjwnalignmenttoolscala"><span class="octicon octicon-link"></span></a>3-4. <a href="https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/main/scala/jwo_jwn_alignment_tool/JWOandJWNAlignmentTool.scala">jwo_jwn_alignment_tool.JWOandJWNAlignmentTool.scala</a>
 </h4>
 
 <ul>
@@ -349,7 +343,7 @@
 <li><a href="https://github.com/t-morita/JWO_Refinement_Tools/tree/master/inputs_and_outputs/alignment-target-class-list.txt">inputs_and_outputs/alignment-target-class-list.txt</a></li>
 <li><a href="https://github.com/t-morita/JWO_Refinement_Tools/tree/master/inputs_and_outputs/jpwn1.1_synonyms_ja.txt">inputs_and_outputs/jpwn1.1_synonyms_ja.txt</a></li>
 <li><a href="https://github.com/t-morita/JWO_Refinement_Tools/tree/master/inputs_and_outputs/merged_class_instance_list.db">inputs_and_outputs/merged_class_instance_list.db</a></li>
-<li><a href="https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/jwn1.1_tdb.zip">ontologies/jwn1.1_tdb</a></li>
+<li><a href="https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/jwn1.1_tdb">ontologies/jwn1.1_tdb</a></li>
 </ul>
 </li>
 <li>Outputs
@@ -384,7 +378,7 @@
 </ul>
 </li>
 </ul><h4>
-<a name="4-2-ontology_builderontologybuilderscala" class="anchor" href="#4-2-ontology_builderontologybuilderscala"><span class="octicon octicon-link"></span></a>4-2. <a href="https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/ontology_builder/OntologyBuilder.scala">ontology_builder.OntologyBuilder.scala</a>
+<a name="4-2-ontology_builderontologybuilderscala" class="anchor" href="#4-2-ontology_builderontologybuilderscala"><span class="octicon octicon-link"></span></a>4-2. <a href="https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/main/scala/ontology_builder/OntologyBuilder.scala">ontology_builder.OntologyBuilder.scala</a>
 </h4>
 
 <ul>
@@ -407,7 +401,7 @@
 </h3>
 
 <h4>
-<a name="5-1-class_instance_refinement_toolremoveredundantclassinstancescala" class="anchor" href="#5-1-class_instance_refinement_toolremoveredundantclassinstancescala"><span class="octicon octicon-link"></span></a>5-1. <a href="https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/class_instance_refinement_tool/RemoveRedundantClassInstance.scala">class_instance_refinement_tool.RemoveRedundantClassInstance.scala</a>
+<a name="5-1-class_instance_refinement_toolremoveredundantclassinstancescala" class="anchor" href="#5-1-class_instance_refinement_toolremoveredundantclassinstancescala"><span class="octicon octicon-link"></span></a>5-1. <a href="https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/main/scala/class_instance_refinement_tool/RemoveRedundantClassInstance.scala">class_instance_refinement_tool.RemoveRedundantClassInstance.scala</a>
 </h4>
 
 <ul>
@@ -430,7 +424,7 @@
 </h3>
 
 <h4>
-<a name="6-1-class_property_extractorclasspropertyextractorscala" class="anchor" href="#6-1-class_property_extractorclasspropertyextractorscala"><span class="octicon octicon-link"></span></a>6-1. <a href="https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/class_property_extractor/ClassPropertyExtractor.scala">class_property_extractor.ClassPropertyExtractor.scala</a>
+<a name="6-1-class_property_extractorclasspropertyextractorscala" class="anchor" href="#6-1-class_property_extractorclasspropertyextractorscala"><span class="octicon octicon-link"></span></a>6-1. <a href="https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/main/scala/class_property_extractor/ClassPropertyExtractor.scala">class_property_extractor.ClassPropertyExtractor.scala</a>
 </h4>
 
 <ul>
@@ -438,7 +432,7 @@
 
 <ul>
 <li><a href="https://github.com/t-morita/JWO_Refinement_Tools/tree/master/inputs_and_outputs/refined_class_instance_list_removing_redundant_type.db">inputs_and_outputs/refined_class_instance_list_removing_redundant_type.db</a></li>
-<li><a href="https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/wikipediaontology_instance_20101114ja.7z">ontologies/wikipediaontology_instance_20101114ja.rdf</a></li>
+<li><a href="https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/wikipediaontology_instance_20101114ja.rdf">ontologies/wikipediaontology_instance_20101114ja.rdf</a></li>
 </ul>
 </li>
 <li>Output
@@ -448,7 +442,7 @@
 </ul>
 </li>
 </ul><h4>
-<a name="6-2-property_elevatorpropertyelevatorscala" class="anchor" href="#6-2-property_elevatorpropertyelevatorscala"><span class="octicon octicon-link"></span></a>6-2. <a href="https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/property_elevator/PropertyElevator.scala">property_elevator.PropertyElevator.scala</a>
+<a name="6-2-property_elevatorpropertyelevatorscala" class="anchor" href="#6-2-property_elevatorpropertyelevatorscala"><span class="octicon octicon-link"></span></a>6-2. <a href="https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/main/scala/property_elevator/PropertyElevator.scala">property_elevator.PropertyElevator.scala</a>
 </h4>
 
 <ul>
@@ -471,7 +465,7 @@
 </h3>
 
 <h4>
-<a name="7-1-ontology_builderrefinedjwobuilderscala" class="anchor" href="#7-1-ontology_builderrefinedjwobuilderscala"><span class="octicon octicon-link"></span></a>7-1. <a href="https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/ontology_builder/RefinedJWOBuilder.scala">ontology_builder.RefinedJWOBuilder.scala</a>
+<a name="7-1-ontology_builderrefinedjwobuilderscala" class="anchor" href="#7-1-ontology_builderrefinedjwobuilderscala"><span class="octicon octicon-link"></span></a>7-1. <a href="https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/main/scala/ontology_builder/RefinedJWOBuilder.scala">ontology_builder.RefinedJWOBuilder.scala</a>
 </h4>
 
 <ul>
@@ -486,7 +480,7 @@
 <li>Outputs
 
 <ul>
-<li><a href="https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/refined_jwo_class_instance_20131225.zip">ontologies/refined_jwo_class_instance_20131225.owl</a></li>
+<li><a href="https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/refined_jwo_class_instance_20131225.owl">ontologies/refined_jwo_class_instance_20131225.owl</a></li>
 <li><a href="https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/refined_jwo_20131225.owl">ontologies/refined_jwo_20131225.owl</a></li>
 </ul>
 </li>
@@ -494,14 +488,14 @@
 <a name="test-programs" class="anchor" href="#test-programs"><span class="octicon octicon-link"></span></a>Test Programs</h2>
 
 <h4>
-<a name="class_instance_extractorrolestatementsextractorscala" class="anchor" href="#class_instance_extractorrolestatementsextractorscala"><span class="octicon octicon-link"></span></a><a href="https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/class_instance_extractor/RoleStatementsExtractor.scala">class_instance_extractor.RoleStatementsExtractor.scala</a>
+<a name="class_instance_extractorrolestatementsextractorscala" class="anchor" href="#class_instance_extractorrolestatementsextractorscala"><span class="octicon octicon-link"></span></a><a href="https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/main/scala/class_instance_extractor/RoleStatementsExtractor.scala">class_instance_extractor.RoleStatementsExtractor.scala</a>
 </h4>
 
 <ul>
 <li>Inputs
 
 <ul>
-<li><a href="https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/wikipediaontology_instance_20101114ja.7z">ontologies/wikipediaontology_instance_20101114ja.rdf</a></li>
+<li><a href="https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/wikipediaontology_instance_20101114ja.rdf">ontologies/wikipediaontology_instance_20101114ja.rdf</a></li>
 <li><a href="https://github.com/t-morita/JWO_Refinement_Tools/tree/master/ontologies/wikipediaontology_class_20101114ja.rdf">ontologies/wikipediaontology_class_20101114ja.rdf</a></li>
 </ul>
 </li>
@@ -512,7 +506,7 @@
 </ul>
 </li>
 </ul><h4>
-<a name="class_instance_extractorclassinstanceextractorfromrolestatementsscala" class="anchor" href="#class_instance_extractorclassinstanceextractorfromrolestatementsscala"><span class="octicon octicon-link"></span></a><a href="https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/class_instance_extractor/ClassInstanceExtractorFromRoleStatements.scala">class_instance_extractor.ClassInstanceExtractorFromRoleStatements.scala</a>
+<a name="class_instance_extractorclassinstanceextractorfromrolestatementsscala" class="anchor" href="#class_instance_extractorclassinstanceextractorfromrolestatementsscala"><span class="octicon octicon-link"></span></a><a href="https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/main/scala/class_instance_extractor/ClassInstanceExtractorFromRoleStatements.scala">class_instance_extractor.ClassInstanceExtractorFromRoleStatements.scala</a>
 </h4>
 
 <ul>
@@ -531,7 +525,7 @@
 </ul>
 </li>
 </ul><h4>
-<a name="class_instance_extractoranalyzerolestatementsscala" class="anchor" href="#class_instance_extractoranalyzerolestatementsscala"><span class="octicon octicon-link"></span></a><a href="https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/class_instance_extractor/AnalyzeRoleStatement.scala">class_instance_extractor.AnalyzeRoleStatements.scala</a>
+<a name="class_instance_extractoranalyzerolestatementsscala" class="anchor" href="#class_instance_extractoranalyzerolestatementsscala"><span class="octicon octicon-link"></span></a><a href="https://github.com/t-morita/JWO_Refinement_Tools/blob/master/src/main/scala/class_instance_extractor/AnalyzeRoleStatement.scala">class_instance_extractor.AnalyzeRoleStatements.scala</a>
 </h4>
 
 <ul>
