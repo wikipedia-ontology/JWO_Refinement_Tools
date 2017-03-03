@@ -12,7 +12,7 @@ Japanese Wikipedia Ontology (JWO) Refinement Tools
 
 ## Acknowledgment
 * [Japanese WordNet](http://nlpwww.nict.go.jp/wn-ja/index.en.html)
-* [Japanese Wikipedia Ontology](http://www.wikipediaontology.org/)
+* [Japanese Wikipedia Ontology](https://ja.osdn.net/projects/wikipedia-ont/)
 * [Apache Jena](http://jena.apache.org)
 * [ScalaQuery](http://scalaquery.org)
 * [sqlite-jdbc] (https://bitbucket.org/xerial/sqlite-jdbc)
