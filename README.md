@@ -15,8 +15,8 @@ Japanese Wikipedia Ontology (JWO) Refinement Tools
 * [Japanese Wikipedia Ontology](https://ja.osdn.net/projects/wikipedia-ont/)
 * [Apache Jena](http://jena.apache.org)
 * [ScalaQuery](http://scalaquery.org)
-* [sqlite-jdbc] (https://bitbucket.org/xerial/sqlite-jdbc)
-* [Swing for Scala] (http://mvnrepository.com/artifact/org.scala-lang/scala-swing/2.9.3)
+* [sqlite-jdbc](https://bitbucket.org/xerial/sqlite-jdbc)
+* [Swing for Scala](http://mvnrepository.com/artifact/org.scala-lang/scala-swing/2.9.3)
 
 ## Download refined JWO
 You can download refined JWO as follows. 
@@ -232,5 +232,5 @@ You can download refined JWO as follows.
 
 ## Contact
 * Author: Takeshi Morita
-* E-mail: t_morita at si.aoyama.ac.jp
+* E-mail: t_morita at keio.jp
 
